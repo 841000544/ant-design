@@ -21,70 +21,42 @@ Display tree structure data in Table, control the indent width by setting `inden
 import { Table } from 'antd';
 
 const columns = [{
-  title: 'Name',
-  dataIndex: 'name',
-  key: 'name',
+  title: '应用',
+  dataIndex: 'app',
+  key: 'app',
 }, {
-  title: 'Age',
-  dataIndex: 'age',
-  key: 'age',
+  title: '时间',
+  dataIndex: 'time',
+  key: 'time',
   width: '12%',
 }, {
-  title: 'Address',
-  dataIndex: 'address',
+  title: '总访问量',
+  dataIndex: 'pv_all',
   width: '30%',
   key: 'address',
 }];
 
 const data = [{
   key: 1,
-  name: 'John Brown sr.',
-  age: 60,
-  address: 'New York No. 1 Lake Park',
+  app: '全部',
+  age: '2018-06-26',
+  pv_all: 36,551,452,
   children: [{
-    key: 11,
-    name: 'John Brown',
-    age: 42,
-    address: 'New York No. 2 Lake Park',
+      key: 11,
+      app: '应用系统01',
+      age: '2018-06-26',
+      pv_all: 36,551,452
   }, {
     key: 12,
-    name: 'John Brown jr.',
-    age: 30,
-    address: 'New York No. 3 Lake Park',
-    children: [{
-      key: 121,
-      name: 'Jimmy Brown',
-      age: 16,
-      address: 'New York No. 3 Lake Park',
-    }],
-  }, {
-    key: 13,
-    name: 'Jim Green sr.',
-    age: 72,
-    address: 'London No. 1 Lake Park',
-    children: [{
-      key: 131,
-      name: 'Jim Green',
-      age: 42,
-      address: 'London No. 2 Lake Park',
-      children: [{
-        key: 1311,
-        name: 'Jim Green jr.',
-        age: 25,
-        address: 'London No. 3 Lake Park',
-      }, {
-        key: 1312,
-        name: 'Jimmy Green sr.',
-        age: 18,
-        address: 'London No. 4 Lake Park',
-      }],
-    }],
-  }],
+    app: '应用系统02',
+    age: '2018-06-26',
+    pv_all: 36,551,452
+  }]
 }, {
   key: 2,
-  name: 'Joe Black',
-  age: 32,
-  address: 'Sidney No. 1 Lake Park',
+  app: '全部',
+  age: '2018-06-22',
+  pv_all: 36,551,452,
 }];
 
 // rowSelection objects indicates the need for row selection
